@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+.blur {
+  height: 100vh;
+  background: rgba(64, 64, 64, 0.29);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{color: white;}
+h1 {
+  font-weight: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2{
+  font-size: smaller;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.home{height: 60vh;
+
   }
+ 
+  .searchbar {
+    background-color: #76767661;
+    color: white;
+    font-size: small;
+    border-radius: 30px;
+    border: none;
+    height: 1rem;
+    padding: 2rem;
+    width: 17rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .searchbar:focus{
+    background-color: #76767661;
+    color: white;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.535);
+    opacity: 1; /* Firefox */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-title{
   color: white;
+  font-size: xxx-large;
+  font-weight: 200;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  background-color: #ffffff2e;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  max-height: 23rem;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img-top{
+  width: 6rem;
+}
+
+p{
+  font-size: x-small;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-text{
+  margin: 0.2rem ;
+}
+
+.degrees{
+  font-size: 3rem;
+  font-weight: 200;
 }
